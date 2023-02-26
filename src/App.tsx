@@ -26,7 +26,6 @@ function App() {
   }
 
   const validatePassword = (password: string) => {
-    // Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character
     const passwordRegex =
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^])[A-Za-z\d@$!%*?&#^]{8,}$/
     if (passwordRegex.test(password)) {
@@ -145,7 +144,7 @@ function App() {
             disabled={!isFormValid}
             className="btn btn-accent"
           >
-            Button
+            Submit
           </button>
         </div>
       </div>
